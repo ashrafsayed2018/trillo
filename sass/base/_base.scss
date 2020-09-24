@@ -19,10 +19,22 @@ html {
     --grey-dark-1 : #333;
     --grey-dark-2 : #777;
     --grey-dark-3 : #999;
+
+    --white : #fff;
     --shadow-dark : 0 2rem 6rem rgba(0,0,0,.3);
+    --shadow-light:  0  1rem 5rem rgba(0,0,0,.15);
+    --line : 1px solid var(--grey-light-2)
 }
+$breakpoint-largest: 75em; // 1200px
+$breakpoint-large: 71.875em; // 1150px
+$breakpoint-medium: 56.25em; // 900px
+$breakpoint-small: 37.5em; // 600px
+$breakpoint-smallest: 31.25em; // 500px
 html {
     font-size: 62.5%; // 1 rem = 10px
+    @media screen and(max-width: $breakpoint-large) {
+        font-size: 50%;
+    }
 }
 
 body {
